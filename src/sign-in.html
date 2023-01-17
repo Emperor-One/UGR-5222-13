@@ -4,32 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Sign in</title>
+
+    <script src="/js/sign-in.js"></script>
   </head>
 
   <body>
-    <article>
-      <header>
-        <a href="index.html">
-          <img src="static/img/fire-post-logo.png" alt="FIRE POST Logo" />
+    <article class="body body--sign-in">
+      <header class="header">
+        <a class="heading-logo-container" href="index.html">
+          <img
+            class="heading-logo-container__fire-post-logo"
+            src="static/img/fire-post-logo.png"
+            alt="FIRE POST Logo"
+          />
         </a>
-        <h1>Sign in</h1>
       </header>
 
-      <form>
-        <label>
-          Username
-          <input type="text" placeholder="Username/Email" required />
-        </label>
+      <h1 class="main-heading">Sign in</h1>
 
-        <label>
-          Password
-          <input type="password" placeholder="Password" reqiured />
-        </label>
+      <form class="form">
+        <label class="form__label" for="email"> Email </label>
 
-        <input type="submit" value="Sign in" />
+        <input
+          class="form__input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="johndoe@example.com"
+          required
+        />
+
+        <label class="form__label" for="password"> Password </label>
+        <input
+          class="form__input"
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          reqiured
+        />
+
+        <input class="form__input form__button" onclick="signIn()" value="SIGN IN" type="submit" value="Sign in" />
       </form>
-      <section>
+      <section class="sign-up-forgot">
         <a href="sign-up.html">Don't have an account?</a>
         <a href="forgot-password.html">Forgot Your password?</a>
       </section>

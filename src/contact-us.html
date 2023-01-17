@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Contact Us</title>
   </head>
 
-  <body>
-    <header>
-      <label for="search">
-        Search
-        <input id="search" type="search" placeholder="Search Here" />
-      </label>
-      <nav>
+  <body class="body">
+    <header class="header">
+      <nav class="header__nav">
+        <form class="header__form">
+          <label for="search">
+            <img
+              class="header__search-icon"
+              src="/static/img/search-icon.png"
+              alt="Search Icon"
+            />
+          </label>
+          <input
+            class="header__search"
+            id="search"
+            type="search"
+            placeholder="Search Here"
+          />
+        </form>
         <a href="news.html">News</a>
         <a href="weather.html">Weather</a>
         <a href="sports.html">Sports</a>
@@ -21,44 +33,46 @@
       </nav>
     </header>
 
-    <article>
-      <header>
-        <h1>Contact US</h1>
-      </header>
+    <h1 class="main-heading">Contact US</h1>
 
-      <form>
-        <label>
-          Please select the area you need help with.
-          <select required>
-            <option value="account_creation">Account Creation</option>
-            <option value="advertising">Advertising</option>
-            <option value="data_privacy">Data Privacy</option>
-            <option value="opinions">Opinions</option>
-          </select>
-        </label>
+    <form class="form">
+      <label class="form__label" for="drop-down">
+        Please select the area you need help with.
+      </label>
+      <select class="form__input" id="drop-down" required>
+        <option value="account_creation">Account Creation</option>
+        <option value="advertising">Advertising</option>
+        <option value="data_privacy">Data Privacy</option>
+        <option value="opinions">Opinions</option>
+      </select>
 
-        <label>
-          Email Address
-          <input type="email" placeholder="johndoe@example.com" required />
-        </label>
+      <label class="form__label" for="email"> Email Address </label>
+      <input
+        class="form__input"
+        id="email"
+        type="email"
+        placeholder="johndoe@example.com"
+        required
+      />
 
-        <label>Subject <input type="text" required /></label>
+      <label class="form__label" for="subject"> Subject </label>
+      <input class="form__input" id="subject" type="text" required />
 
-        <label>
-          Description
-          <textarea
-            placeholder="Enter details of your question, comment, concern, or request"
-            cols="40"
-            rows="10"
-          ></textarea>
-        </label>
+      <label class="form__label">
+        Description
+        <textarea
+          class="form__input"
+          placeholder="Enter details of your question, comment, concern, or request"
+          cols="40"
+          rows="10"
+        ></textarea>
+      </label>
 
-        <input class="submit" type="submit" value="Submit" />
-      </form>
-    </article>
+      <input class="form__input form__button" type="submit" value="Submit" />
+    </form>
 
-    <footer>
-      <nav>
+    <footer class="footer">
+      <nav class="footer__nav">
         <a href="index.html">Home</a>
         <a href="about-us.html">About Us</a>
         <a href="contact-us.html">Contact Us</a>
@@ -66,7 +80,7 @@
         <a href="terms-of-use.html">Terms of Use</a>
       </nav>
 
-      <p>Copyright &copy; 2022. FIRE POST</p>
+      <p class="footer__paragraph">Copyright &copy; 2023. FIRE POST</p>
     </footer>
   </body>
 </html>

@@ -4,32 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Terms of Use</title>
   </head>
-  <body>
-    <header>
-      <label for="search">
-        Search
-        <input id="search" type="search" placeholder="Search Here" />
-      </label>
-      <nav>
+  <body class="body">
+    <header class="header">
+      <nav class="header__nav"> 
+        <form class="header__form">
+          <label for="search">
+            <img
+              class="header__search-icon"
+              src="/static/img/search-icon.png"
+              alt="Search Icon"
+            />
+          </label>
+          <input
+            class="header__search"
+            id="search"
+            type="search"
+            placeholder="Search Here"
+          />
+        </form>
         <a href="news.html">News</a>
         <a href="weather.html">Weather</a>
         <a href="sports.html">Sports</a>
-        <a href="sign-in.html">Sign in</a>
+        <button><a href="sign-in.html">Sign in</a></button>
       </nav>
     </header>
+    
+    <div class="heading-logo-container">
+      <img class="heading-logo-container__fire-post-logo"src="static/img/fire-post-logo.png" alt="FIRE POST Logo" />
+      <h1>Terms of Use</h1>
+    </div>
 
-    <main>
-      <header>
-        <img src="static/img/fire-post-logo.png" alt="FIRE POST Logo" />
-
-        <h1 class="terms-of-use">Terms of Use</h1>
-      </header>
-
-      <article>
-        <h2>GLWT(Good Luck With That) Public License</h2>
-        <h3>Copyright (c) Everyone, except Author</h3>
+    <main class="article-container">
+        <h2 class="article-container__heading">GLWT(Good Luck With That) Public License</h2>
+        <h3 class="article-container__heading">Copyright (c) Everyone, except Author</h3>
 
         <p>
           Everyone is permitted to copy, distribute, modify, merge, sell,
@@ -37,17 +47,22 @@
           their OWN RISK.
         </p>
 
-        <h3>Preamble</h3>
+        <h3 class="article-container__heading">Preamble</h3>
         <p>
           The author does not hold any explicit or arbitrable ownership of the
           content on this website.
         </p>
 
-        <h4>
-          GOOD LUCK WITH THAT PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING,
-          DISTRIBUTION, AND MODIFICATION
-        </h4>
-        <ol>
+        <div class="article-container__h4">
+          <h4>
+            GOOD LUCK WITH THAT PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING,
+          </h4>
+          <h4 class="article-container__heading">
+            DISTRIBUTION, AND MODIFICATION
+          </h4>
+        </div>
+
+        <ol class="article-container__tos-list">
           <li>
             You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE
             TO TRACK THE AUTHOR of the original product to blame for or hold
@@ -63,19 +78,19 @@
         </p>
 
         <p>Good luck and Godspeed.</p>
-      </article>
 
-      <footer>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about-us.html">About Us</a>
-          <a href="contact-us.html">Contact Us</a>
-          <a href="sign-in.html">Bookmarks</a>
-          <a href="terms-of-use.html">Terms of Use</a>
-        </nav>
-
-        <p>Copyright &copy; 2022. FIRE POST</p>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="sign-in.html">Bookmarks</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+      </nav>
+
+      <p class="footer__paragraph">Copyright &copy; 2023. FIRE POST</p>
+    </footer>
   </body>
 </html>

@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Home</title>
   </head>
 
-  <body>
-    <header>
-      <label for="search">
-        Search
-        <input id="search" type="search" placeholder="Search Here" />
-      </label>
-      <nav>
+  <body class="body">
+    <header class="header">
+      <nav class="header__nav">
+        <form class="header__form">
+          <label for="search">
+            <img
+              class="header__search-icon"
+              src="/static/img/search-icon.png"
+              alt="Search Icon"
+            />
+          </label>
+          <input
+            class="header__search"
+            id="search"
+            type="search"
+            placeholder="Search Here"
+          />
+        </form>
         <a href="news.html">News</a>
         <a href="weather.html">Weather</a>
         <a href="sports.html">Sports</a>
@@ -21,13 +33,17 @@
       </nav>
     </header>
 
-    <div>
-      <img src="static/img/fire-post-logo.png" alt="FIRE POST Logo" />
+    <div class="heading-logo-container">
+      <img
+        class="heading-logo-container__fire-post-logo"
+        src="static/img/fire-post-logo.png"
+        alt="FIRE POST Logo"
+      />
       <h1>FIRE POST</h1>
     </div>
 
-    <article>
-      <section class="articles">
+    <main class="article-container">
+      <section class="article-container__articles">
         <a href="sample-article.html">
           <img
             src="static/img/explosion-aftermath.jpg"
@@ -37,19 +53,21 @@
           />
         </a>
 
-        <a class="article-headings" href="sample-article.html">
-          <b>Article Heading</b>
-        </a>
+        <div class="article-container__article-information">
+          <a class="article-headings" href="sample-article.html">
+            <h2>Sample Article Heading</h2>
+          </a>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia
-          aperiam et illo corrupti voluptatibus quisquam quos, aspernatur quas?
-          Debitis iure id ex harum nesciunt repudiandae expedita? Doloremque,
-          odit. Accusantium.
-        </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+            mollitia aperiam et illo corrupti voluptatibus quisquam quos,
+            aspernatur quas? Debitis iure id ex harum nesciunt repudiandae
+            expedita? Doloremque, odit. Accusantium.
+          </p>
+        </div>
       </section>
 
-      <section class="articles">
+      <section class="article-container__articles">
         <a href="sample-article.html">
           <img
             src="static/img/explosion-aftermath.jpg"
@@ -59,21 +77,23 @@
           />
         </a>
 
-        <a class="article-headings" href="sample-article.html"
-          ><b>Article Heading</b></a
-        >
+        <div class="article-container__article-information">
+          <a class="article-headings" href="sample-article.html">
+            <h2>Sample Article Heading</h2>
+          </a>
 
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
-          mollitia ut in, vitae impedit commodi quae dicta excepturi quaerat
-          accusamus, tempora magnam ea temporibus et quam? Nam in rerum
-          perferendis?
-        </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+            mollitia ut in, vitae impedit commodi quae dicta excepturi quaerat
+            accusamus, tempora magnam ea temporibus et quam? Nam in rerum
+            perferendis?
+          </p>
+        </div>
       </section>
-    </article>
+    </main>
 
-    <footer>
-      <nav>
+    <footer class="footer">
+      <nav class="footer__nav">
         <a href="index.html">Home</a>
         <a href="about-us.html">About Us</a>
         <a href="contact-us.html">Contact Us</a>
@@ -81,7 +101,7 @@
         <a href="terms-of-use.html">Terms of Use</a>
       </nav>
 
-      <p>Copyright &copy; 2022. FIRE POST</p>
+      <p class="footer__paragraph">Copyright &copy; 2023. FIRE POST</p>
     </footer>
   </body>
 </html>
