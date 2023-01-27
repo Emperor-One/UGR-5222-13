@@ -53,21 +53,23 @@
       </div>
   
       <main class="d-grid gap-5 justify-content-center">
-        <header class="d-grid gap-5 justify-content-center">
+        <header class="d-flex gap-5 flex-column justify-content-center align-items-center">
           <img
-            class="img-fluid"
+            class="w-75"
             src="static/img/explosion-aftermath.jpg"
             alt="The aftermath of the explosion in Beirut"
             width="800px"
           />
   
           <div
-            class="article-container__options article-container--extra-options"
+            class="d-flex justify-content-center gap-5"
           >
-            <figure class="article-container__listen-audio">
+            <figure class="d-flex">
               <figcaption class="article-container__listen">
                 <img
                   class="article-container__listen-icon"
+                  height="40rem"
+                  width="40rem"
                   src="static/img/listen-icon.png"
                   alt="Listen to the article"
                 />
@@ -85,8 +87,8 @@
                 />
               </audio>
             </figure>
-            <button class="article-container__share">Share</button>
-            <button class="article-container__bookmark">Bookmark</button>
+            <button class="">Share</button>
+            <button class="">Bookmark</button>
           </div>
         </header>
   
@@ -104,9 +106,9 @@
           accusantium laboriosam officiis, facere cum error fugit ullam impedit
           voluptas.
         </p>
-
+        <div class="container">
           <video
-            class="w-75"
+            class="-self-center w-100"
             src="static/video/the-city-from-a-distance.mp4"
             controls
             loop
@@ -121,6 +123,7 @@
               label="English"
             />
           </video>
+        </div>
   
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad veritatis
@@ -166,7 +169,7 @@
           ducimus. Beatae saepe ad suscipit possimus eius illum veniam vel!
         </p>
   
-        <div class="breaking-news">
+        <div class="container bg-warning">
           <h4 class="breaking-news__heading">Breaking News</h4>
           <ul class="breaking-news__list">
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
