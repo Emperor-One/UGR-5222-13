@@ -4,100 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
     <title>About Us</title>
   </head>
 
-  <body class="body">
-    <header class="header">
-      <nav class="header__nav">
-        <form class="header__form">
-          <label for="search">
-            <img
-              class="header__search-icon"
-              src="/static/img/search-icon.png"
-              alt="Search Icon"
-            />
-          </label>
-          <input
-            class="header__search"
-            id="search"
-            type="search"
-            placeholder="Search Here"
-          />
-        </form>
-        <a href="news.html">News</a>
-        <a href="weather.html">Weather</a>
-        <a href="sports.html">Sports</a>
-        <a href="sign-in.html">Sign in</a>
-      </nav>
-    </header>
-
-    <h1 class="main-heading">About the FIRE POST</h1>
-
-    <main class="article-container article-container--about-us">
-      <header class="article-container__header">
-        <img
-        class="article-container__head-office-img"
-          src="static/img/the-organization.jpg"
-          alt="FIRE POST Head Office"
-        />
-
-        <div class="article-container__options">
-
-          <figure class="article-container__listen-audio">
-            <figcaption class="article-container__listen">
-              <img class="article-container__listen-icon" src="/static/img/listen-icon.png" alt="Listen to the article">
-            </figcaption>
-            <audio class="article-container__audio" controls src="static/audio/about-us-audio.mp3">
-              <track
-              kind="captions"
-              src="static/audio/about-us-audio.vtt"
-              srclang="en"
-              label="English"
+  <body class="">
+    <div class="row d-grid gap-5 min-vh-100">
+      <header class="container-fluid text-black bg-danger">
+        <nav class="navbar">
+          <form class="">
+            <label class="" for="search">
+              <img
+                height="24rem"
+                width="24rem"
+                class=""
+                src="static/img/search-icon.png"
+                alt="Search Icon"
               />
-            </audio>
-          </figure>
-          <button class="article-container__share">Share</button>
-        </div>
+            </label>
+            <input
+              class=""
+              id="search"
+              type="search"
+              placeholder="Search Here"
+            />
+          </form>
+          <a class="nav-link" href="news.html">News</a>
+          <a class="nav-link" href="weather.html">Weather</a>
+          <a class="nav-link" href="sports.html">Sports</a>
+          <a class="nav-link" href="sign-in.html">Sign in</a>
+        </nav>
+      </header>
+
+      <div class="d-flex justify-content-center">
+        <h1 class="main-heading">About the FIRE POST</h1>
+      </div>
+
+      <main class="d-grid gap-5 justify-content-center">
+        <header class="d-grid gap-5 justify-content-center">
+          <img
+            class="img-fluid"
+            src="static/img/the-organization.jpg"
+            alt="FIRE POST Head Office"
+          />
+
+          <div class="d-flex justify-content-center gap-5">
+            <figure class="d-flex">
+              <figcaption class="article-container__listen">
+                <img
+                  height="40rem"
+                  width="40rem"
+                  class="article-container__listen-icon"
+                  src="/static/img/listen-icon.png"
+                  alt="Listen to the article"
+                />
+              </figcaption>
+              <audio
+                class="article-container__audio"
+                controls
+                src="static/audio/about-us-audio.mp3"
+              >
+                <track
+                  kind="captions"
+                  src="static/audio/about-us-audio.vtt"
+                  srclang="en"
+                  label="English"
+                />
+              </audio>
+            </figure>
+            <button class="w-25">Share</button>
+          </div>
         </header>
 
-      <h2 class="main-heading">Mission Statement</h2>
+        <div class="d-flex justify-content-center">
+          <h2 class="main-heading">Mission Statement</h2>
+        </div>
 
         <p class="article-container__paragraphs">
           The most important and defining mission of FIRE POST is to tell the
-        truth as nearly as the truth may be ascertained. FIRE POST shall tell
-        all of the truth so far as it can learn it. Unde provident sunt
-        doloremque eveniet deleniti, soluta itaque magni delectus quia, tempore
-        nemo, qui nulla optio odit voluptatibus laudantium accusantium laborum
-        illum.
-      </p>
+          truth as nearly as the truth may be ascertained. FIRE POST shall tell
+          all of the truth so far as it can learn it. Unde provident sunt
+          doloremque eveniet deleniti, soluta itaque magni delectus quia,
+          tempore nemo, qui nulla optio odit voluptatibus laudantium accusantium
+          laborum illum.
+        </p>
 
-      <p class="article-container__paragraphs">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam,
-        consectetur iure eaque eveniet illo eius, debitis omnis quos possimus
-        culpa eligendi obcaecati rerum pariatur magnam amet eos quasi quae?
-      </p>
+        <p class="article-container__paragraphs">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam,
+          consectetur iure eaque eveniet illo eius, debitis omnis quos possimus
+          culpa eligendi obcaecati rerum pariatur magnam amet eos quasi quae?
+        </p>
 
-      <p class="article-container__paragraphs">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nesciunt
-        dignissimos facilis! Natus amet voluptatum, vero laudantium, illo quod
-        suscipit asperiores architecto quo dolor, libero aspernatur quaerat
-        dolores? Nemo, voluptas.
-      </p>
+        <p class="article-container__paragraphs">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nesciunt
+          dignissimos facilis! Natus amet voluptatum, vero laudantium, illo quod
+          suscipit asperiores architecto quo dolor, libero aspernatur quaerat
+          dolores? Nemo, voluptas.
+        </p>
+      </main>
+
+      <footer class="text-black bg-danger">
+        <nav class="navbar">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about-us.html">About Us</a>
+          <a class="nav-link" href="contact-us.html">Contact Us</a>
+          <a class="nav-link" href="sign-in.html">Bookmarks</a>
+          <a class="nav-link" href="terms-of-use.html">Terms of Use</a>
+        </nav>
+
+        <p class="row justify-content-center">
+          Copyright &copy; 2023. FIRE POST
+        </p>
+      </footer>
     </div>
-    </main>
-
-    <footer class="footer">
-      <nav class="footer__nav">
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="contact-us.html">Contact Us</a>
-        <a href="sign-in.html">Bookmarks</a>
-        <a href="terms-of-use.html">Terms of Use</a>
-      </nav>
-
-      <p class="footer__paragraph">Copyright &copy; 2023. FIRE POST</p>
-    </footer>
   </body>
 </html>
