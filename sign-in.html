@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
     <title>Sign in</title>
 
-    <script src="/js/sign-in.js"></script>
+    <script src="js/sign-in.js"></script>
   </head>
 
   <body>
-    <article class="body body--sign-in">
-      <header class="header">
-        <a class="heading-logo-container" href="index.html">
+    <article class="d-grid gap-5 min-vh-100">
+      <header class="d-inline-flex flex-column align-items-center">
+        <a href="index.html">
           <img
-            class="heading-logo-container__fire-post-logo"
+            width="100rem"
             src="static/img/fire-post-logo.png"
             alt="FIRE POST Logo"
           />
         </a>
       </header>
 
-      <h1 class="main-heading">Sign in</h1>
+      <div class="d-inline-flex flex-column align-items-center">
+        <h1 class="main-heading">Sign in</h1>
+      </div>
 
-      <form class="form">
-        <label class="form__label" for="email"> Email </label>
+      <form class="d-grid gap-4 justify-content-center">
+        <label class="" for="email"> Email </label>
 
         <input
           class="form__input"
@@ -46,12 +51,19 @@
           reqiured
         />
 
-        <input class="form__input form__button" onclick="signIn()" value="SIGN IN" type="submit" value="Sign in" />
+        <input
+          class="mt-3"
+          onclick="signIn()"
+          value="SIGN IN"
+          type="submit"
+          value="Sign in"
+        />
       </form>
-      <section class="sign-up-forgot">
+      <section class="d-grid gap-2 mb-5 justify-content-center">
         <a href="sign-up.html">Don't have an account?</a>
         <a href="forgot-password.html">Forgot Your password?</a>
       </section>
+
     </article>
   </body>
 </html>
