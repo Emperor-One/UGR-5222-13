@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Weather</title>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <nav class="header__nav">
+        <form class="header__form">
+          <label for="search">
+            <img
+              class="header__search-icon"
+              src="/static/img/search-icon.png"
+              alt="Search Icon"
+            />
+          </label>
+          <input
+            class="header__search"
+            id="search"
+            type="search"
+            placeholder="Search Here"
+          />
+        </form>
+
+        <a href="news.html">News</a>
+        <a href="weather.html">Weather</a>
+        <a href="sports.html">Sports</a>
+        <a href="sign-in.html">Sign in</a>
+      </nav>
+    </header>
+
+    <h1 class="main-heading">Weather</h1>
+    
+      <form class="form">
+        <label class="form__label" for="weather">
+          Select a Location to get the Weather
+        </label>
+        <select class="form__input" id="weather" required>
+          <option value="addis_ababa">Addis Ababa</option>
+          <option value="casablanca">Casablanca</option>
+          <option value="nairobi">Nairobi</option>
+        </select>
+
+        <input class="form__input form__button" type="submit" value="Get Forecast" />
+      </form>
+      
+      <!-- <button class="degree">°C</button>
+      <button class="degree">°F</button> -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="sign-in.html">Bookmarks</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+      </nav>
+
+      <p class="footer__paragraph">Copyright &copy; 2023. FIRE POST</p>
+    </footer>
+  </body>
+</html>
