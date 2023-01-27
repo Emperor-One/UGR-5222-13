@@ -4,83 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
     <title>Contact Us</title>
   </head>
 
-  <body class="body">
-    <header class="header">
-      <nav class="header__nav">
-        <form class="header__form">
-          <label for="search">
-            <img
-              class="header__search-icon"
-              src="/static/img/search-icon.png"
-              alt="Search Icon"
+  <body class="">
+    <div class="row d-grid gap-5 min-vh-100">
+      <header class="container-fluid text-black bg-danger">
+        <nav class="navbar">
+          <form class="">
+            <label class="" for="search">
+              <img
+                height="24rem"
+                width="24rem"
+                class=""
+                src="static/img/search-icon.png"
+                alt="Search Icon"
+              />
+            </label>
+            <input
+              class=""
+              id="search"
+              type="search"
+              placeholder="Search Here"
             />
-          </label>
-          <input
-            class="header__search"
-            id="search"
-            type="search"
-            placeholder="Search Here"
-          />
-        </form>
-        <a href="news.html">News</a>
-        <a href="weather.html">Weather</a>
-        <a href="sports.html">Sports</a>
-        <a href="sign-in.html">Sign in</a>
-      </nav>
-    </header>
+          </form>
+          <a class="nav-link" href="news.html">News</a>
+          <a class="nav-link" href="weather.html">Weather</a>
+          <a class="nav-link" href="sports.html">Sports</a>
+          <a class="nav-link" href="sign-in.html">Sign in</a>
+        </nav>
+      </header>
 
-    <h1 class="main-heading">Contact US</h1>
+      <div class="d-flex justify-content-center">
+        <h1 class="main-heading">Contact US</h1>
+      </div>
 
-    <form class="form">
-      <label class="form__label" for="drop-down">
-        Please select the area you need help with.
-      </label>
-      <select class="form__input" id="drop-down" required>
-        <option value="account_creation">Account Creation</option>
-        <option value="advertising">Advertising</option>
-        <option value="data_privacy">Data Privacy</option>
-        <option value="opinions">Opinions</option>
-      </select>
+      <form class="d-grid gap-3 justify-content-center">
+        <label class="form__label" for="drop-down">
+          Please select the area you need help with.
+        </label>
+        <select class="form__input" id="drop-down" required>
+          <option value="account_creation">Account Creation</option>
+          <option value="advertising">Advertising</option>
+          <option value="data_privacy">Data Privacy</option>
+          <option value="opinions">Opinions</option>
+        </select>
 
-      <label class="form__label" for="email"> Email Address </label>
-      <input
-        class="form__input"
-        id="email"
-        type="email"
-        placeholder="johndoe@example.com"
-        required
-      />
+        <label class="form__label" for="email"> Email Address </label>
+        <input
+          class="form__input"
+          id="email"
+          type="email"
+          placeholder="johndoe@example.com"
+          required
+        />
 
-      <label class="form__label" for="subject"> Subject </label>
-      <input class="form__input" id="subject" type="text" required />
+        <label class="form__label" for="subject"> Subject </label>
+        <input class="form__input" id="subject" type="text" required />
 
-      <label class="form__label">
-        Description
+        <label class="form__label">
+          Description
+        </label>
         <textarea
           class="form__input"
           placeholder="Enter details of your question, comment, concern, or request"
           cols="40"
           rows="10"
         ></textarea>
-      </label>
 
-      <input class="form__input form__button" type="submit" value="Submit" />
-    </form>
+        <input class="form__input form__button" type="submit" value="Submit" />
+      </form>
 
-    <footer class="footer">
-      <nav class="footer__nav">
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="contact-us.html">Contact Us</a>
-        <a href="sign-in.html">Bookmarks</a>
-        <a href="terms-of-use.html">Terms of Use</a>
-      </nav>
+      <footer class="text-black bg-danger">
+        <nav class="navbar">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about-us.html">About Us</a>
+          <a class="nav-link" href="contact-us.html">Contact Us</a>
+          <a class="nav-link" href="sign-in.html">Bookmarks</a>
+          <a class="nav-link" href="terms-of-use.html">Terms of Use</a>
+        </nav>
 
-      <p class="footer__paragraph">Copyright &copy; 2023. FIRE POST</p>
-    </footer>
+        <p class="row justify-content-center">
+          Copyright &copy; 2023. FIRE POST
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

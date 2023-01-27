@@ -4,39 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
     <title>Weather</title>
   </head>
 
-  <body class="body">
-    <header class="header">
-      <nav class="header__nav">
-        <form class="header__form">
-          <label for="search">
-            <img
-              class="header__search-icon"
-              src="/static/img/search-icon.png"
-              alt="Search Icon"
+  <body class="">
+    <div class="row d-grid gap-5 min-vh-100">
+      <header class="container-fluid text-black bg-danger">
+        <nav class="navbar">
+          <form class="">
+            <label class="" for="search">
+              <img
+                height="24rem"
+                width="24rem"
+                class=""
+                src="static/img/search-icon.png"
+                alt="Search Icon"
+              />
+            </label>
+            <input
+              class=""
+              id="search"
+              type="search"
+              placeholder="Search Here"
             />
-          </label>
-          <input
-            class="header__search"
-            id="search"
-            type="search"
-            placeholder="Search Here"
-          />
-        </form>
+          </form>
+          <a class="nav-link" href="news.html">News</a>
+          <a class="nav-link" href="weather.html">Weather</a>
+          <a class="nav-link" href="sports.html">Sports</a>
+          <a class="nav-link" href="sign-in.html">Sign in</a>
+        </nav>
+      </header>
 
-        <a href="news.html">News</a>
-        <a href="weather.html">Weather</a>
-        <a href="sports.html">Sports</a>
-        <a href="sign-in.html">Sign in</a>
-      </nav>
-    </header>
+      <div class="d-inline-flex flex-column align-items-center">
+        <h1 class="justify-self-center">Weather</h1>
+      </div>
 
-    <h1 class="main-heading">Weather</h1>
-    
-      <form class="form">
+      <form class="d-grid gap-4 justify-content-center">
         <label class="form__label" for="weather">
           Select a Location to get the Weather
         </label>
@@ -46,21 +53,26 @@
           <option value="nairobi">Nairobi</option>
         </select>
 
-        <input class="form__input form__button" type="submit" value="Get Forecast" />
+        <input
+          class="form__input form__button"
+          type="submit"
+          value="Get Forecast"
+        />
       </form>
-      
-      <!-- <button class="degree">°C</button>
-      <button class="degree">°F</button> -->
-    <footer class="footer">
-      <nav class="footer__nav">
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="contact-us.html">Contact Us</a>
-        <a href="sign-in.html">Bookmarks</a>
-        <a href="terms-of-use.html">Terms of Use</a>
-      </nav>
 
-      <p class="footer__paragraph">Copyright &copy; 2023. FIRE POST</p>
-    </footer>
+        <footer class="text-black bg-danger">
+          <nav class="navbar">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about-us.html">About Us</a>
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+            <a class="nav-link" href="sign-in.html">Bookmarks</a>
+            <a class="nav-link" href="terms-of-use.html">Terms of Use</a>
+          </nav>
+  
+          <p class="row justify-content-center">
+            Copyright &copy; 2023. FIRE POST
+          </p>
+        </footer>
+    </div>
   </body>
 </html>
